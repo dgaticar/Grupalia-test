@@ -1,0 +1,47 @@
+/* Contenedor principal de los avisos */
+.avisosContainer {
+  display: flex;
+  justify-content: center;  /* Centra los elementos horizontalmente */
+  padding: 20px;
+  gap: 20px; /* Espacio entre los dos listados */
+}
+
+/* Contenedor de los dos listados (compra y venta) */
+.listaContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Estilo para cada lista de anuncios */
+.lista {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 45%;  /* Controla el ancho de cada lista */
+  overflow-y: auto;  /* Habilita el scroll si hay más elementos */
+  height: 400px;  /* Limita la altura de las listas para que se alineen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de cada anuncio */
+.aviso {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los campos dentro del aviso */
+.monto, .ubicacion {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Cambio aquí: Agregamos una clase para los h2 */
+.lista h2 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
