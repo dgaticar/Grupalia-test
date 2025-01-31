@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WebApp test Grupalia
 
-## Getting Started
+Esta es una **webapp** para crear, visualizar y gestionar ofertas de compra o venta de dinero virtual por dinero en efectivo. Los usuarios pueden crear un anuncio (ya sea de compra o venta) proporcionando detalles como nombre, monto, ubicación y contacto. 
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Registro de usuario**: Los usuarios pueden registrarse y autenticarse para crear y ver ofertas.
+- **Creación de anuncios**: Los usuarios pueden crear ofertas de compra de dinero electronico o venta de dinero electronico especificando los detalles requeridos.
+- **Visualización de ofertas**: Los usuarios pueden ver los anuncios de compra y venta en un formato atractivo.
+- **Interactividad**: Al hacer clic en un anuncio, se muestra información detallada del mismo.
+  
+## Tecnologías utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Frontend**: React, Next.js, CSS
+- **Backend**: Supabase (autenticación y base de datos)
+- **Base de datos**: Supabase PostgreSQL
+- **Despliegue**: Vercel (para el frontend)
+  
+## Requisitos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Antes de ejecutar el proyecto, asegúrate de tener las siguientes herramientas instaladas:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Node.js**: [Descargar e instalar Node.js](https://nodejs.org)
+- **npm o yarn**: Dependiendo de la gestión de dependencias que prefieras.
+  
+## Instalacion
 
-## Learn More
+Crear el proyecto con Next.js
 
-To learn more about Next.js, take a look at the following resources:
+-npx create-next-app@grupalia
+-cd my-login-app
+-npm install @supabase/supabase-js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Copiar carpeta src a directorio aplicacion
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ejecutar con versel desde directorio raiz
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-vercel
